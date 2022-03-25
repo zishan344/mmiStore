@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+  margin: 10px;
+}
+.header h1 {
+  margin-bottom: 0px;
+  color: aqua;
+}
+.header h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
