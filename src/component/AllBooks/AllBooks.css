@@ -1,0 +1,23 @@
+.full-container {
+  display: grid;
+  grid-template-columns: 3.8fr 1.2fr;
+  gap: 20px;
+}
+.all-books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .full-container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* grid-template-columns: 1fr; */
+    gap: 20px;
+  }
+  .all-books {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

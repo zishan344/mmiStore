@@ -1,0 +1,9 @@
+.cart-info {
+  display: flex;
+  gap: 20px;
+}
+.cart-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
