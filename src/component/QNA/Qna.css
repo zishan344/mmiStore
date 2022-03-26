@@ -12,9 +12,15 @@
 .qna-title {
   text-align: center;
 }
+.para {
+  margin-top: 50px;
+}
 
 @media screen and (max-width: 600px) {
   .all-qna {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .para {
+    margin-top: 16px;
   }
 }

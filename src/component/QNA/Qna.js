@@ -5,7 +5,7 @@ const Qna = () => {
     <div className="all-qna">
       <div className="qna1">
         <h2 className="qna-title">How works React</h2>
-        <p>
+        <p className="para">
           React A seam to seam creates another dom similar to this browser dom
           which is called virtual dom. Now this dome looks exactly like the real
           dome, but this virtual dome is actually a JavaScript object. React
@@ -22,7 +22,7 @@ const Qna = () => {
         </p>
       </div>
       <div className="qna2">
-        <h2 className="qna-title">How works useState</h2>
+        <h2 className="qna-title">Props vs State</h2>
         <div className="stateQna">
           <div>
             <h4>props</h4>
