@@ -51,7 +51,7 @@ const AllBooks = () => {
 
           <Random random={randome} isChoose={isChoose}></Random>
           <div className="btn-box">
-            {cart.length ? (
+            {cart.length > 1 ? (
               <button onClick={randomBook} className="choose-btn">
                 CHOOSE 1 FOR ME
               </button>
