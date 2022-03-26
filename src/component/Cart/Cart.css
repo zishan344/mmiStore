@@ -1,9 +1,17 @@
 .cart-info {
   display: flex;
   gap: 20px;
+  margin-top: 10px;
 }
 .cart-info img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .cart-info {
+    flex-direction: column;
+    gap: 0px;
+  }
 }

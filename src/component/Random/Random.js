@@ -1,17 +1,17 @@
 import React from "react";
-import "./Cart.css";
 
-const Cart = ({ cart }) => {
-  const { img, name } = cart;
+const Random = ({ random }) => {
+  const { img, name } = random;
 
   return (
     <div>
+      <h4>random item</h4>
       <div className="cart-info">
         <img src={img} alt="" />
-        <h5>Book Name: {name}</h5>
+        <h5>{name}</h5>
       </div>
     </div>
   );
 };
 
-export default Cart;
+export default Random;

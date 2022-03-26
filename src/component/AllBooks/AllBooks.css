@@ -8,7 +8,27 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-
+.order-cart {
+}
+.cart {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: aquamarine;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.btn-box {
+  margin-bottom: 10px;
+}
+.choose-btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  background: #bc71c2;
+  border-radius: 10px;
+}
 @media screen and (max-width: 600px) {
   .full-container {
     display: flex;
@@ -19,5 +39,10 @@
   .all-books {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  .choose-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

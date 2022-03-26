@@ -1,0 +1,14 @@
+.all-qna {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+.stateQna {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.qna-title {
+  text-align: center;
+}
