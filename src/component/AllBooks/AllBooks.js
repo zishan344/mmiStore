@@ -7,6 +7,7 @@ const AllBooks = () => {
   const [books, setBooks] = useState([]);
   const [cart, setCart] = useState([]);
   const [randome, setRandom] = useState([]);
+  const [isChoose, setIsChoose] = useState(false);
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
@@ -15,11 +16,16 @@ const AllBooks = () => {
   const handlaleAddToCart = (book) => {
     const savedCart = [...cart, book];
     setCart(savedCart);
+    setIsChoose(false);
   };
+  // random book genarotor
   const randomBook = () => {
+    setIsChoose(true);
     setRandom(cart[Math.floor(Math.random() * cart.length)]);
   };
+  // choose again function
   const emptyCart = () => {
+    setIsChoose(false);
     setCart([]);
     setRandom([]);
   };
@@ -43,11 +49,15 @@ const AllBooks = () => {
             <Cart key={cart.id} cart={cart}></Cart>
           ))}
 
-          <Random random={randome}></Random>
+          <Random random={randome} isChoose={isChoose}></Random>
           <div className="btn-box">
-            <button onClick={randomBook} className="choose-btn">
-              CHOOSE 1 FOR ME
-            </button>
+            {cart.length ? (
+              <button onClick={randomBook} className="choose-btn">
+                CHOOSE 1 FOR ME
+              </button>
+            ) : (
+              ""
+            )}
             <button onClick={emptyCart} className="choose-btn">
               CHOOSE AGAIN
             </button>
